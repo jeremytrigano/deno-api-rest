@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "aad6daf2-85b1-431f-9285-03e87d0cec2a",
+		"name": "deno-api-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET http://localhost:1337/heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"heroes"
+					]
+				},
+				"description": "GET http://localhost:1337/heroes"
+			},
+			"response": []
+		},
+		{
+			"name": "GET http://localhost:1337/heroes/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/heroes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"heroes",
+						"1"
+					]
+				},
+				"description": "GET http://localhost:1337/heroes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "GET http://localhost:1337/heroes/1337",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/heroes/1337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"heroes",
+						"1337"
+					]
+				},
+				"description": "GET http://localhost:1337/heroes/1337"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE  http://localhost:1337/heroes/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/heroes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"heroes",
+						"1"
+					]
+				},
+				"description": "DELETE  http://localhost:1337/heroes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "POST  http://localhost:1337/heroes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Scarlet Witch\",\r\n    \"alterego\" : \"Wanda Maximoff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"heroes"
+					]
+				},
+				"description": "POST  http://localhost:1337/heroes\r\nContent-Type: application/json\r\n\r\n{\r\n    \"name\" : \"Scarlet Witch\",\r\n    \"alterego\" : \"Wanda Maximoff\"\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT  http://localhost:1337/heroes/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alterego\" : \"Mar-Vell\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/heroes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"heroes",
+						"2"
+					]
+				},
+				"description": "PUT  http://localhost:1337/heroes/2\r\nContent-Type: application/json\r\n\r\n{\r\n    \"alterego\" : \"Mar-Vell\"\r\n}"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

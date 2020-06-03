@@ -1,0 +1,26 @@
+GET http://localhost:1337/heroes HTTP/1.1
+### 
+GET http://localhost:1337/heroes/1 HTTP/1.1
+### 
+GET http://localhost:1337/heroes/1337 HTTP/1.1
+
+### 
+DELETE  http://localhost:1337/heroes/1 HTTP/1.1
+
+
+### 
+POST  http://localhost:1337/heroes HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Scarlet Witch",
+    "alterego" : "Wanda Maximoff"
+}
+
+### 
+PUT  http://localhost:1337/heroes/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "alterego" : "Mar-Vell"
+}
